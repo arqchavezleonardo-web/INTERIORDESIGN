@@ -23,14 +23,14 @@ main img.in{opacity:1;transform:none}
 <div id="msg" hidden></div>
 <script>
 /* Carga los bloques p1-01.webp, p1-02.webp ... p2-01.webp ... en orden, conforme bajas.
-   Busca primero en la carpeta img/ y, si no están ahí, en la raíz del sitio.
+   Las busca solo en la carpeta img/ (ignora cualquier .webp suelto en la raíz).
    No depende de cuántos bloques haya. */
 (function(){
   var m=document.getElementById("m"), end=document.getElementById("end"), msg=document.getElementById("msg");
   var prefix=null, p=1, k=1, busy=false, done=false, count=0;
   function name(){return "p"+p+"-"+(k<10?"0":"")+k+".webp"}
   function load(cb){
-    var tries=prefix===null?["img/",""]:[prefix];
+    var tries=["img/"];
     (function t(i){
       if(i>=tries.length){cb(false);return}
       var im=new Image();
