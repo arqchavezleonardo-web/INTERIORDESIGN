@@ -4,68 +4,64 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Luxury Living Design — Leonardo Chávez</title>
-<script>document.documentElement.classList.add("js")</script>
 <style>
 html{background:#fff;-webkit-text-size-adjust:100%}
-body{margin:0}
+body{margin:0;font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;color:#555}
 main{max-width:1400px;margin:0 auto}
-img{display:block;width:100%;height:auto}
+main img{display:block;width:100%;height:auto;opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+main img.in{opacity:1;transform:none}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.js .rv{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
-.js .rv.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+#end{height:1px}
+#msg{padding:48px 24px;text-align:center}
+@media (prefers-reduced-motion:reduce){main img{opacity:1;transform:none;transition:none}}
 </style>
 </head>
 <body>
-<main>
 <h1 class="vh">Luxury Living Design — Leonardo Chávez</h1>
-<img class="rv" src="img/p1-01.webp" width="2000" height="2477" loading="eager" decoding="async" alt="">
-<img class="rv" src="img/p1-02.webp" width="2000" height="217" loading="eager" decoding="async" alt="">
-<img class="rv" src="img/p1-03.webp" width="2000" height="869" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p1-04.webp" width="2000" height="1582" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p1-05.webp" width="2000" height="1087" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p1-06.webp" width="2000" height="367" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p1-07.webp" width="2000" height="4829" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p2-01.webp" width="2000" height="1023" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p2-02.webp" width="2000" height="2394" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p2-03.webp" width="2000" height="1066" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p2-04.webp" width="2000" height="308" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p2-05.webp" width="2000" height="3484" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p2-06.webp" width="2000" height="3154" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p3-01.webp" width="2000" height="2461" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p3-02.webp" width="2000" height="342" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p3-03.webp" width="2000" height="1425" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p3-04.webp" width="2000" height="4814" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p3-05.webp" width="2000" height="2386" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p4-01.webp" width="2000" height="1351" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p4-02.webp" width="2000" height="2403" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p4-03.webp" width="2000" height="1396" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p4-04.webp" width="2000" height="344" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p4-05.webp" width="2000" height="3791" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p4-06.webp" width="2000" height="2143" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p5-01.webp" width="2000" height="4791" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p5-02.webp" width="2000" height="1360" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p5-03.webp" width="2000" height="1400" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p5-04.webp" width="2000" height="261" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p5-05.webp" width="2000" height="1609" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p5-06.webp" width="2000" height="406" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p5-07.webp" width="2000" height="586" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p5-08.webp" width="2000" height="1014" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p6-01.webp" width="2000" height="1174" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p6-02.webp" width="2000" height="1182" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p6-03.webp" width="2000" height="1151" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p6-04.webp" width="2000" height="215" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p6-05.webp" width="2000" height="1091" loading="lazy" decoding="async" alt="">
-<img class="rv" src="img/p6-06.webp" width="2000" height="397" loading="lazy" decoding="async" alt="">
-</main>
+<main id="m"></main>
+<div id="end"></div>
+<div id="msg" hidden></div>
 <script>
+/* Carga los bloques p1-01.webp, p1-02.webp ... p2-01.webp ... en orden, conforme bajas.
+   Busca primero en la carpeta img/ y, si no están ahí, en la raíz del sitio.
+   No depende de cuántos bloques haya. */
 (function(){
-  var els=document.querySelectorAll(".rv");
-  if(!("IntersectionObserver" in window)){els.forEach(function(e){e.classList.add("in")});return}
-  var io=new IntersectionObserver(function(es){
-    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}});
-  },{threshold:0.1,rootMargin:"0px 0px -6% 0px"});
-  els.forEach(function(e){io.observe(e)});
+  var m=document.getElementById("m"), end=document.getElementById("end"), msg=document.getElementById("msg");
+  var prefix=null, p=1, k=1, busy=false, done=false, count=0;
+  function name(){return "p"+p+"-"+(k<10?"0":"")+k+".webp"}
+  function load(cb){
+    var tries=prefix===null?["img/",""]:[prefix];
+    (function t(i){
+      if(i>=tries.length){cb(false);return}
+      var im=new Image();
+      im.decoding="async"; im.alt="";
+      im.onload=function(){
+        prefix=tries[i]; m.appendChild(im);
+        requestAnimationFrame(function(){requestAnimationFrame(function(){im.className="in"})});
+        cb(true);
+      };
+      im.onerror=function(){t(i+1)};
+      im.src=tries[i]+name();
+    })(0);
+  }
+  function check(){
+    if(done||busy)return;
+    if(end.getBoundingClientRect().top<window.innerHeight*2)next();
+  }
+  function next(){
+    if(busy||done)return;
+    busy=true;
+    load(function(ok){
+      busy=false;
+      if(ok){count++;k++;check();return}
+      if(k>1){p++;k=1;next();return}
+      done=true;
+      if(!count){msg.hidden=false;msg.textContent='No encuentro las imágenes. Revisa que la carpeta "img" (con p1-01.webp, p1-02.webp...) esté subida junto a este index.html.'}
+    });
+  }
+  window.addEventListener("scroll",check,{passive:true});
+  window.addEventListener("resize",check);
+  next();
 })();
 </script>
 </body>
